@@ -3,6 +3,7 @@ function Games(){
 computer_value=check()
 console.log(computer_value)
 let uservalue=document.getElementById('text').value 
+uservalue=uservalue.toLowerCase() 
  if(uservalue==''){
      alert('please Enter anyone')
  }
