@@ -46,6 +46,7 @@ background: indianred;
 }
 .container .child  #get ,#comp{
     margin: 5px 20px;
+    display:block;
     font-size: 22px;
 }
 .container .child  #get #display,#displays{
