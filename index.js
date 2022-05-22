@@ -22,9 +22,14 @@ function Games() {
                 document.getElementById("display").innerHTML = 'You lose'
                 document.getElementById("display").style.color = 'red'
             }
-            else {
-                document.getElementById("display").innerHTML = 'Draw'
+           else if(uservalue==computer_value){
+                document.getElementById("display").innerHTML = 'draw'
                 document.getElementById("display").style.color = 'white'
+
+            }
+            else {
+                document.getElementById("display").innerHTML = 'Not Correct'
+            }ocument.getElementById("display").style.color = 'white'
             }
         }
 
@@ -39,10 +44,13 @@ function Games() {
                 document.getElementById("display").style.color = 'green'
                 document.getElementById("display").style.fontWeight = 'bolder'
             }
-            else {
+             else if(uservalue==computer_value){
                 document.getElementById("display").innerHTML = 'draw'
                 document.getElementById("display").style.color = 'white'
 
+            }
+            else {
+                document.getElementById("display").innerHTML = 'Not Correct'
             }
         }
 
@@ -60,10 +68,14 @@ function Games() {
             document.getElementById("display").style.color = 'green'
             document.getElementById("display").style.fontWeight = 'bolder'
         }
-        else {
-            document.getElementById("display").innerHTML = 'draw'
-            document.getElementById("display").style.color = 'white'
-        }
+         else if(uservalue==computer_value){
+                document.getElementById("display").innerHTML = 'draw'
+                document.getElementById("display").style.color = 'white'
+
+            }
+            else {
+                document.getElementById("display").innerHTML = 'Not Correct'
+            }
     }
 }
 
