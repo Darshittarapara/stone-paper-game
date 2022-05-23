@@ -12,7 +12,7 @@ body {
     background: rgb(176, 151, 151);
 }
 .container{
-background: rgb(48, 143, 221);
+background: rgba(14, 116, 219, 0.9);
 width: 600px;
 
 box-shadow: 0px 0px 10px 0px silver;
@@ -21,6 +21,7 @@ height: 300px;
 
 .container .child {
     padding: 30px 30px;
+    position: relative;
 }
 .container .child  h2 {
     margin: 10px ;
@@ -30,28 +31,36 @@ height: 300px;
 resize: none;
 font-size: 20px;
 }
-.container .child form input{
-    background: rgb(217, 138, 47);
-    padding: 10px 20px;
-    margin: 10px 0px;
+.container .child form label{
+
+ margin: 18px 0px;
+padding: 0px 10px;
     border: 0px;
     transition: all 0.25s ease-in-out;
-    color: white;
+    color:rgba(0, 0, 0,0.6);
 
-    font-size: 17px;
+    font-size: 22px;
     border-radius: 18px;
 }
 .container .child form input:hover {
 background: indianred;
 }
 .container .child  #get ,#comp{
-    margin: 5px 20px;
-    display:block;
+position: absolute;
+top: 140px;
     font-size: 22px;
+    
+}
+#comp{
+    position: absolute;
+    left: 260px;
 }
 .container .child  #get #display,#displays{
   
     margin: 0px 5px;
+}
+#displays {
+    color:white;
 }
 
 @media screen and (max-width:545px) {
@@ -60,12 +69,25 @@ background: indianred;
     }
     .container .child  {
         padding: 0px 10px;
-        overflow: hidden;
+    
     }
     .container .child form textarea {
         resize: none;
         font-size: 14px;
         margin: 10px 10px;
         }
+        .container .child  #get ,#comp{
+            position: absolute;
+            top: 90px;
+            display: block;
+            z-index: 2;
+                font-size: 22px;
+                
+            }
+            #comp{
+                position: absolute;
+                left: 10px;
+                top: 120px;
+            }
      
 }
