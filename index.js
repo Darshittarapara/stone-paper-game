@@ -1,8 +1,8 @@
 let computer_value;
-function Games() {
+function Games(a) {
     computer_value = check()
 
-    let uservalue = document.getElementById('text').value
+    let  uservalue= document.getElementsByClassName("userinput")[a].value
     uservalue = uservalue.toLowerCase()
     if (uservalue == '') {
         alert('please choose anyone');
