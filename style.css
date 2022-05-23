@@ -77,17 +77,16 @@ top: 140px;
         margin: 10px 10px;
         }
         .container .child  #get ,#comp{
-            position: absolute;
-            top: 90px;
-            display: block;
-            z-index: 2;
-                font-size: 22px;
-                
-            }
-            #comp{
                 position: absolute;
-                left: 10px;
-                top: 120px;
-            }
-     
+                top: 130px;
+                display: block;
+                z-index: 2;
+                    font-size: 22px;
+                    
+                }
+                #comp{
+                    position: absolute;
+                    left: 10px;
+                    top: 160px;
+                }
 }
