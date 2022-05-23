@@ -12,9 +12,14 @@
          <div class="child">
              <h2>Choose stone Paper Or scissors</h2>
             <form action="">
-                <textarea name="user" id="text" cols="32" rows="3" placeholder="Choose Anyone"></textarea><br>
-    
-                <input type="button" value="ChecK result" onclick="Games()">
+               
+               <input  onclick="Games(0)"class="userinput" type="radio" id="stone" value="stone" name="select">
+               <label for="stone">Stone</label>
+               <input  onclick="Games(1)" class="userinput" type="radio" id="paper" value="paper" name="select">
+               <label for="paper">Paper</label>
+               <input onclick="Games(2)" class="userinput" type="radio" id="scissors" value="scissors" name="select">
+               <label for="scissors">scissors</label>
+                
             </form>
             <span id="comp">
                 Player-1:<span id ="displays"></span>
